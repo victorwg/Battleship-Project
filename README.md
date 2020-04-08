@@ -4,3 +4,8 @@
 
 **2. Wong Sai Yiu Victor (UID:         ) (Year 1 Engineering Student)**
 
+## Game to be implemented (Battleship)
+### Description
+- Try and sink all of the other player's before they sink all of your ships.
+
+
