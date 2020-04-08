@@ -6,6 +6,8 @@
 
 ## Game to be implemented (Battleship)
 ### Description
-- Try and sink all of the other player's before they sink all of your ships.
+- Players given multiple battleship of different sizes to put on their board.
+- Players take turns guessing opponent battleships by calling out the corresponding coordinates on the board.
+- Try and sink all of the other player's battleships before they sink all of yours.
 
 
