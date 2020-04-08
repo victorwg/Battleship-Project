@@ -6,8 +6,13 @@
 
 ## Game to be implemented (Battleship)
 ### Description
-- Players given multiple battleship of different sizes to put on their board.
+- Players given multiple battleships of different sizes to put on their board.
+- Once the guessing begins, players may not move their ships.
 - Players take turns guessing opponent battleships by calling out the corresponding coordinates on the board.
 - Try and sink all of the other player's battleships before they sink all of yours.
+
+### Game Rules
+#### Placement of ship
+
 
 
