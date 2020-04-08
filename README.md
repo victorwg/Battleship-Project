@@ -30,7 +30,9 @@
 - Player vs AI
 - Player vs Player
 - 2 Player vs 2 Player (?)
-####
+
+### Functions plan to implement
+- TBC
 
 
 
