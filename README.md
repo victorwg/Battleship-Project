@@ -14,7 +14,7 @@
 #### General Rules
 - Once the guessing begins, players may not move their ships.
 - Board Size = 8 x 8
-##### Type of ships
+- ##### Type of ships
 1. Carrier (occupies spaces: 5)
 2. Battleship (occupies spaces: 4)
 3. Cruiser (occupies spaces: 3)
