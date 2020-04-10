@@ -20,34 +20,30 @@
 3. Cruiser (occupies spaces: 3)
 4. Submarine (occupies spaces: 3)
 5. and Destroyer (occupies spaces: 2)
+
 #### Placement of ship
 - Ships can only be placed vertically or horizontally, diagonal placement is not allowed. 
 - No part of a ship may hang off the edge of the board.  
 - Ships may not overlap each other.  
 - No ships may be placed on another ship. 
+
 #### Playing the game
 - Players take turns guessing by calling out the corresponding coordinates on the board. The opponent responds with "hit" or "miss" as appropriate.
 - Players' board will be marked for record. **'O'** == hit, **'X'** == miss.
+
 #### Win/Lose
-- When player sunk all opponent's ship == **WIN**.
-- When all player's ship had sunk by opponent == **LOSE**.
+- When player sunk all opponent's ship == **VICTORY**.
+- When all player's ship had sunk by opponent == **DEFEAT**.
 
 ### Features plan to implement
 #### Game Mode 
 - Player vs AI
 - Player vs Player
-- 2 Player vs 2 Player (?)
 
 ### Functions plan to implement
-- Main(), the main body of the function.
-- getBoard(), print the board of the user/AI.
-- putShip(), let player to place ship on their board.
-- putShipAI(), randomize AI's ships position.
+- main(), the main body of the function.
+- printBoard(), print the board of the user/AI.
+- putShip(), let player to place ships on user's board.
+- getBoard(), randomize AI's ships position on AI's board.
 - play(), player turn to call coordinate.
-
-
-
- 
-
-
-
+- AI(), AI turn to call coordinate.
