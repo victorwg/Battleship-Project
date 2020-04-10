@@ -39,7 +39,11 @@
 - 2 Player vs 2 Player (?)
 
 ### Functions plan to implement
-- TBC
+- Main(), the main body of the function.
+- getBoard(), print the board of the user/AI.
+- putShip(), let player to place ship on their board.
+- putShipAI(), randomize AI's ships position.
+- play(), player turn to call coordinate.
 
 
 
