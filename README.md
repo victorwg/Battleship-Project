@@ -8,7 +8,7 @@
 ### Description
 - Players given 5 battleships of different sizes to put on their board.
 - Players take turns guessing opponent battleships by calling out the corresponding coordinates on the board.
-- Try and sink all of the other player's battleships before they sink all of yours.
+- Try and sink all of the other player's battleships.
 
 ### Game Rules
 #### General Rules
@@ -31,9 +31,8 @@
 - Players take turns guessing by calling out the corresponding coordinates on the board. The opponent responds with "hit" or "miss" as appropriate.
 - Players' board will be marked for record. **'O'** == hit, **'X'** == miss.
 
-#### Win/Lose
+#### How to WIN
 - When player sunk all opponent's ship == **VICTORY**.
-- When all player's ship had sunk by opponent == **DEFEAT**.
 
 ### Features plan to implement
 #### Game Mode 
@@ -41,8 +40,7 @@
 
 ### Functions plan to implement
 - main(), the main body of the function.
-- printBoard(), print the board of the user/AI.
-- putShip(), let player to place ships on user's board.
-- getBoard(), randomize AI's ships position on AI's board.
+- printBoard(), print the board of the user.
 - play(), player turn to call coordinate.
-- AI(), AI turn to call coordinate.
+- end(), check if all ships are sunk.
+- num_moves(), shows number of moves needed to win.
