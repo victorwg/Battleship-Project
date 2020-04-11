@@ -45,3 +45,6 @@
 - play(), player turn to call coordinate.
 - end(), check if all ships are sunk.
 - num_moves(), shows number of moves needed to win.
+
+### Dynamic Memory Management
+We use dynamic array for this game, a 2d array is used to initialize the battleship board. The dynamic array will be deleted upon ending of the game. Memory of the board will therefore be free up.
