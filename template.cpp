@@ -11,6 +11,10 @@ void printBoard(string board[]) {
     
 }
 
+void placeship(){
+    
+}
+
 void play() {
     
 }
