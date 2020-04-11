@@ -38,7 +38,6 @@
 ### Features plan to implement
 #### Game Mode 
 - Player vs AI
-- Player vs Player
 
 ### Functions plan to implement
 - main(), the main body of the function.
