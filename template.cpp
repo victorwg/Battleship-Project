@@ -11,10 +11,6 @@ void printBoard(string board[]) {
     
 }
 
-void putShip(string board[]) {
-    
-}
-
 void getBoard() {
     
 }
@@ -23,10 +19,13 @@ void play() {
     
 }
 
-void AI() {
+void end() {
     
 }
 
+void num_moves(){
+    
+}
 int main() {
     //choose game mode
     cout << "Welcome to Battleship!" << endl;
