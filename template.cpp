@@ -1,42 +1,70 @@
 #include <iostream>
-#include <string>
-#include <isstream>
+#include <iomanip>
+
 using namespace std;
 
-void printBoard(string board[]) {
+int row, col;
 
+void makeBoard(char ** ptr) {
+    for (int r = 0; r < 10; ++r) {
+        for (int c = 0; c < 10; ++c) {
+            ptr[r][c] = ' ';
+        }
+    }
 }
 
-void placeship(){
-
+void printBoard(char ** ptr) {
+    cout << endl;
+    cout << "012345678901234567890123456789012345678901234" << endl;
+    cout << "      A   B   C   D   E   F   G   H   I   J  " << endl;
+    
+    cout << right;
+    for (int r = 0; r < 10; ++r) {
+        cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+        cout << ' ' << setw(2) << r+1 << ' ';
+        for (int c = 0; c < 10; ++c) {
+            cout << "| " << ptr[r][c] << ' ';
+        }
+        cout << '|' << endl;
+    }
+    cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
 }
 
-void play() {
-
-}
-
-void end() {
-
-}
-
-void num_moves(){
-
-}
 
 int main() {
-    //choose game mode
-    int mapx = 10; // map width
-    int mapy = 10; // map length
-    string **map = new string*[mapx]; // create a 2d dynamic array
-    for(int i = 0; i < mapx; ++i) {
-    map[i] = new string[mapy];
-    }
-    cout << "Welcome to Battleship!" << endl;
-    cout << "Please choose a game mode: " << endl;
+    row = 10, col = 10;
 
-    for(int i = 0; i < mapx; ++i) { // delete the 2d dynamic array
-    delete [] map[i];
+    //an array of pointers to arrays
+    char ** ptr = new char * [row];
+    for(int r = 0; r < row; ++r) {
+        ptr[r] = new char [col];
     }
-    delete [] map;
+
+    makeBoard(ptr);
+
+    cout << "Welcome to Battleship!" << endl;
+    printBoard(ptr);
+
     return 0;
 }
+cout << "012345678901234567890123456789012345678901234" << endl;
+cout << "      A   B   C   D   E   F   G   H   I   J  " << endl;
+cout << "  1 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  2 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  3 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  4 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  5 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  6 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  7 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  8 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << "  9 |   |   |   |   |   |   |   |   |   |   |" << endl;
+cout << "     --- --- --- --- --- --- --- --- --- --- " << endl;
+cout << " 10 |   |   |   |   |   |   |   |   |   |   |" << endl;
