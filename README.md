@@ -6,13 +6,12 @@
 
 ## Game to be implemented (Battleship)
 ### Description
-- Players given 5 battleships of different sizes to put on their board.
-- Players take turns guessing opponent battleships by calling out the corresponding coordinates on the board.
-- Try and sink all of the other player's battleships.
+- Players take turns guessing AI battleships by calling out the corresponding coordinates on the board.
+- Try and sink all of the battleships.
 
 ### Game Rules
 #### General Rules
-- Once the guessing begins, players may not move their ships.
+- Once the guessing begins, ships won't move.
 - Board Size = 10 x 10
 - Type of ships
 1. Carrier (occupies spaces: 5)
@@ -28,7 +27,7 @@
 - No ships may be placed on another ship. 
 
 #### Playing the game
-- Players take turns guessing by calling out the corresponding coordinates on the board. The opponent responds with "hit" or "miss" as appropriate.
+- Players take turns guessing by calling out the corresponding coordinates on the board.
 - Players' board will be marked for record. **'O'** == hit, **'X'** == miss.
 
 #### How to WIN
