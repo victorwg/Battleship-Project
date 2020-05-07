@@ -18,7 +18,7 @@
 2. Battleship (occupies spaces: 4)
 3. Cruiser (occupies spaces: 3)
 4. Submarine (occupies spaces: 3)
-5. and Destroyer (occupies spaces: 2)
+5. Destroyer (occupies spaces: 2)
 
 #### Placement of ship
 - Ships can only be placed vertically or horizontally, diagonal placement is not allowed. 
