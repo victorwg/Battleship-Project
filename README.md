@@ -6,7 +6,7 @@
 
 ## Game to be implemented (Battleship)
 ### Description
-- Players take turns guessing AI battleships by calling out the corresponding coordinates on the board.
+- Player take turn guessing AI battleships by calling out the corresponding coordinates on the board.
 - Try and sink all of the battleships.
 
 ### Game Rules
@@ -27,8 +27,8 @@
 - No ships may be placed on another ship. 
 
 #### Playing the game
-- Players take turns guessing by calling out the corresponding coordinates on the board.
-- Players' board will be marked for record. **'O'** == hit, **'X'** == miss.
+- Player take turn guessing by calling out the corresponding coordinates on the board.
+- Player's board will be marked for record. **'O'** == hit, **'X'** == miss.
 
 #### How to WIN
 - When player sunk all opponent's ship == **VICTORY**.
@@ -47,7 +47,8 @@
 - gameStatus(), file I/O for saving game status.
 
 ### Dynamic Memory Management
-We use dynamic array for this game, a 2d array is used to initialize the battleship board. The dynamic array will be deleted upon ending of the game. Memory of the board will therefore be free up.
+We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
+
 
 ### File I/O
 We allow players to save their status and load it when they start a new game.
