@@ -40,7 +40,7 @@
 ### Functions plan to implement
 - main(), the main body of the function.
 - placeShip(), randomize ships in the board. (No input required)
-- printBoard(), print the board. 
+- printBoard(), print the board. (No input required)
 - play(), player turn to call coordinate.
 - end(), check if all ships are sunk.
 - num_moves(), shows number of moves needed to win.
