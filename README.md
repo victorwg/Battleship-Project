@@ -45,6 +45,8 @@
 - check_ship(), check if all ships are sunk. (No input required)
 - turn(), tracks number of moves needed to win. (No input required)
 - gameStatus(), file I/O for saving game status. (No input required)
+-inputXCoord, allow user to input x-coordinate for guessing. (No input required)
+-inputYCoord, allow user to input y-coordinate for guessing. (No input required)
 
 ### Dynamic Memory Management
 We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
