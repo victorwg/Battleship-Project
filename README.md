@@ -41,7 +41,7 @@
 - main(), the main body of the function.
 - placeShip(), randomize ships in the board. (No input required)
 - printBoard(), print the board. (No input required)
-- play(), player turn to call coordinate.
+- play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
 - end(), check if all ships are sunk.
 - num_moves(), shows number of moves needed to win.
 - gameStatus(), file I/O for saving game status.
