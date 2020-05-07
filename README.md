@@ -42,9 +42,9 @@
 - placeShip(), randomize ships in the board. (No input required)
 - printBoard(), print the board. (No input required)
 - play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
-- end(), check if all ships are sunk.
-- num_moves(), shows number of moves needed to win.
-- gameStatus(), file I/O for saving game status.
+- check_ship(), check if all ships are sunk. (No input required)
+- turn(), tracks number of moves needed to win. (No input required)
+- gameStatus(), file I/O for saving game status. (No input required)
 
 ### Dynamic Memory Management
 We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
