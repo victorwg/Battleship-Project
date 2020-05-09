@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "placeShip.h"
 #include "printBoard.h"
 #include "load_gameStatus.h"
@@ -57,9 +58,9 @@ int main() {
     cout << "************************************************************************" << endl;
     cout << '\n' << endl;
 
-    char choice;
+    string choice = " ";
     int count, overall, size_of_array;
-    while (choice != '4') {
+    while (choice[0] != '4') {
         //print menu
         cout << "1: NEW GAME" << endl;
     	cout << "2: RESUME GAME" << endl;
@@ -70,54 +71,59 @@ int main() {
         cin >> choice;
         cout << endl;
 
-        if (choice == '1') {
-            choice = 0;
-            count = 0, overall = 0, size_of_array = 5;
-            placeShip(ptr,pos);
-            printBoard(ptr, count);
-            play(ptr,pos,overall,size_of_array,count);
-        }
-        else if (choice == '2') {
-            load_gameStatus(ptr,pos,overall,size_of_array,count);
-            play(ptr,pos,overall,size_of_array,count);
-        }
-        else if (choice == '3') { //print rules
-            cout << "*************************** General Rules ******************************" << endl;
-            cout << "1. Once the guessing begins, ships won't move.                          " << endl;
-            cout << "2. 5 Types of ship in Battleship!                                       " << endl;
-            cout << "2.1 Carrier (occupies spaces: 5)                                        " << endl;
-            cout << "2.2 Battleship (occupies spaces: 4)                                     " << endl;
-            cout << "2.3 Cruiser (occupies spaces: 3)                                        " << endl;
-            cout << "2.4 Submarine (occupies spaces: 3)                                      " << endl;
-            cout << "2.5 Destroyer (occupies spaces: 2)                                      " << endl;
-            cout << "3. Ships can only be placed vertically or horizontally.                 " << endl;
-            cout << "4. No part of a ship may hang off the edge of the board.                " << endl;
-            cout << "5. Ships may not overlap each other.                                    " << endl;
-            cout << "6. No ships may be placed on another ship.                              " << endl;
-            cout << "************************************************************************" << endl;
-            cout << '\n' << endl;
-            cout << "*************************** How to play ********************************" << endl;
-            cout << "Player take turn calling out the corresponding coordinates on the board." << endl;
-            cout << "Players' board will be marked for record. 'O' == hit, 'X' == miss.      " << endl;
-            cout << "When player sunk all opponent's ship == VICTORY.                        " << endl;
-            cout << "************************************************************************" << endl;
-            cout << endl;
-            cout << "*************************** Battleship *********************************" << endl;
-            cout << endl;
-        }
-        else if (choice == '4') {
-            cout << "Thanks for playing!" << endl;
-            cout << "            ." << endl;
-            cout << "           \":\"" << endl;
-            cout << "         ___:____     |\"\\/\"|" << endl;
-            cout << "       ,'        `.    \\  /" << endl;
-            cout << "       |  O        \\___/  |" << endl;
-            cout << "     ~^~^~^~^~^~^~^~^~^~^~^~^~" << endl;
-            cout << endl;
-            break;
+        if (choice.length() == 1) {
+            if (choice[0] == '1') {
+                count = 0, overall = 0, size_of_array = 5;
+                placeShip(ptr,pos);
+                printBoard(ptr, count);
+                play(ptr,pos,overall,size_of_array,count);
+            }
+            else if (choice[0] == '2') {
+                if (load_gameStatus(ptr,pos,overall,size_of_array,count)) {
+                    play(ptr,pos,overall,size_of_array,count);
+                }
+            }
+            else if (choice[0] == '3') { //print rules
+                cout << "*************************** General Rules ******************************" << endl;
+                cout << "1. Once the guessing begins, ships won't move.                          " << endl;
+                cout << "2. 5 Types of ship in Battleship!                                       " << endl;
+                cout << "2.1 Carrier (occupies spaces: 5)                                        " << endl;
+                cout << "2.2 Battleship (occupies spaces: 4)                                     " << endl;
+                cout << "2.3 Cruiser (occupies spaces: 3)                                        " << endl;
+                cout << "2.4 Submarine (occupies spaces: 3)                                      " << endl;
+                cout << "2.5 Destroyer (occupies spaces: 2)                                      " << endl;
+                cout << "3. Ships can only be placed vertically or horizontally.                 " << endl;
+                cout << "4. No part of a ship may hang off the edge of the board.                " << endl;
+                cout << "5. Ships may not overlap each other.                                    " << endl;
+                cout << "6. No ships may be placed on another ship.                              " << endl;
+                cout << "************************************************************************" << endl;
+                cout << '\n' << endl;
+                cout << "*************************** How to play ********************************" << endl;
+                cout << "Player take turn calling out the corresponding coordinates on the board." << endl;
+                cout << "Players' board will be marked for record. 'O' == hit, 'X' == miss.      " << endl;
+                cout << "When player sunk all opponent's ship == VICTORY.                        " << endl;
+                cout << "************************************************************************" << endl;
+                cout << endl;
+                cout << "*************************** Battleship *********************************" << endl;
+                cout << endl;
+            }
+            else if (choice[0] == '4') {
+                cout << "Thanks for playing!" << endl;
+                cout << "            ." << endl;
+                cout << "           \":\"" << endl;
+                cout << "         ___:____     |\"\\/\"|" << endl;
+                cout << "       ,'        `.    \\  /" << endl;
+                cout << "       |  O        \\___/  |" << endl;
+                cout << "     ~^~^~^~^~^~^~^~^~^~^~^~^~" << endl;
+                cout << endl;
+                break;
+            }
+            else { //invalid input
+                cout << "Error. Please try again.\n" << endl;
+            }
         }
         else { //invalid input
-            cout << "Error. Please try again. " << endl;
+            cout << "Error. Please try again.\n" << endl;
         }
     }
 
