@@ -103,6 +103,7 @@ int main() {
             cout << "************************************************************************" << endl;
             cout << endl;
             cout << "*************************** Battleship *********************************" << endl;
+            cout << endl;
         }
         else if (choice == '4') {
             cout << "Thanks for playing!" << endl;
