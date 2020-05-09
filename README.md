@@ -6,7 +6,7 @@
 
 ## Problem Statement
 1. Hoping to recreated a classic random-based and text-based game battleship completely. 
-2. Strengthen our coding skills with the use of various important concepts in C++ (Dynamic memory arrangement, File I/O etc).
+2. Strengthen our coding skills with the use of various important concepts in C++. (Dynamic memory arrangement, File I/O)
 3. Broaden our horizon in the world of coding, hoping to grasp more knowledge on how to code.
 4. Fulfill one of our goals, creating a game that is playable.
 
@@ -44,19 +44,17 @@
 - Player vs AI
 
 ### Functions plan to implement
-- main(), the main body of the function.
-- placeShip(), randomize ships in the board. (No input required)
+- main(), the main body of the function. (No input required)
+- placeShip(), randomize ships position and place it in the board. (No input required)
 - printBoard(), print the board. (No input required)
 - play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
 - check_ship(), check if all ships are sunk. (No input required)
-- turn(), tracks number of moves needed to win. (No input required)
-- gameStatus(), file I/O for saving game status. (No input required)
+- save_gameStatus(), file I/O for saving game status. (Input required, "/save")
 -inputXCoord, allow user to input x-coordinate for guessing. (No input required)
 -inputYCoord, allow user to input y-coordinate for guessing. (No input required)
 
 ### Dynamic Memory Management
 We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
-
 
 ### File I/O
 We allow players to save their status and load it when they start a new game.
