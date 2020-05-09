@@ -4,6 +4,12 @@
 
 **2. Wong Sai Yiu Victor (UID:3035687754) (Year 1 Engineering Student)**
 
+## Problem Statement
+1. Hoping to recreated a classic random-based and text-based game battleship completely. 
+2. Strengthen our coding skills with the use of various important concepts in C++ (Dynamic memory arrangement, File I/O etc).
+3. Broaden our horizon in the world of coding, hoping to grasp more knowledge on how to code.
+4. Fulfill one of our goals, creating a game that is playable.
+
 ## Game to be implemented (Battleship)
 ### Description
 - Player take turn guessing AI battleships by calling out the corresponding coordinates on the board.
