@@ -59,7 +59,7 @@ We use dynamic array for this game, a 2d array is used to initialize the battles
 ### File I/O
 We allow players to save their status and load it when they start a new game.
 
-### Compilation and Execution
-With the makefile included, player should type their respective server
-1. make game for compilation
-2. ./game for execution 
+### Compilation and Execution (Manual)
+With the makefile included, player should type in their respective server
+1. **make game** for compilation
+2. **./game** for execution 
