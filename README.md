@@ -44,14 +44,14 @@
 - Player vs AI
 
 ### Functions plan to implement
-- main(), The main body of the function. (Input required, integer '1' for new gameplay, '2' for loading saved game, '3' for rules, '4' for terminating gameplay) (Output will be described in commit comment)
+- main(), The main body of the function. (Valid input required, integer '1' for new gameplay, '2' for loading saved game, '3' for rules, '4' for terminating gameplay) (Output will be described in commit comment)
 - placeShip(), Randomize ships position and place it in the board. (No input required) 
 - printBoard(), Print the board. (No input required)
 - play(), Process user input and check for input hit or missed a ship (No input required) (Output will be described in commit comment)
 - check_ship(), Check if all ships are sunk. (No input required) (Output will be described in commit comment)
 - save_gameStatus(), File I/O for saving game status to "gamedata.txt" (Input required, "/save")
 - load_gameStatus(), File I/O for loading game status from "gamedata.txt" (Input required, integer '2' in main function)
-- input, Allow user to input x-coordinate, y-coordinate for guessing. (Input required, X-coordinate(A-J) and Y-coordinate(1-10)) (Output will be described in commit comment)
+- input(), Allow user to input x-coordinate, y-coordinate for guessing. (Input required, X-coordinate(A-J) and Y-coordinate(1-10)) (Output will be described in commit comment)
 
 ### Dynamic Memory Management
 We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
@@ -60,7 +60,7 @@ We use dynamic array for this game, a 2d array is used to initialize the battles
 We allow players to save their status and load it when they start a new game.
 
 ### Compilation and Execution (Manual)
-With the makefile included, player should type in their respective server
+With the makefile included, player should type in their respective server:
 1. **make game** for compilation
 2. **./game** for execution 
 
