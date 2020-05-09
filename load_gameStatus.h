@@ -3,6 +3,6 @@
 
 using std::string;
 
-void load_gameStatus(char ** ptr, string * pos, int & overall, int & size_of_array, int & count);
+bool load_gameStatus(char ** ptr, string * pos, int & overall, int & size_of_array, int & count);
 
 #endif
