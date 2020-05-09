@@ -49,9 +49,10 @@
 - printBoard(), print the board. (No input required)
 - play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
 - check_ship(), check if all ships are sunk. (No input required)
-- save_gameStatus(), file I/O for saving game status. (Input required, "/save")
--inputXCoord, allow user to input x-coordinate for guessing. (No input required)
--inputYCoord, allow user to input y-coordinate for guessing. (No input required)
+- save_gameStatus(), file I/O for saving game status to "gamedata.txt" (Input required, "/save")
+- load_gameStatus(), filr I/O for loading game status from "gamedata.txt" (Input required, integer '2' in main function)
+- inputXCoord, allow user to input x-coordinate for guessing. (No input required)
+- inputYCoord, allow user to input y-coordinate for guessing. (No input required)
 
 ### Dynamic Memory Management
 We use dynamic array for this game, a 2d array is used to initialize the battleship board. Another array is used to store the position of the ship. The dynamic arrays will be deleted upon ending of the game. Memory of the board will therefore be free up.
