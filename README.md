@@ -63,3 +63,6 @@ We allow players to save their status and load it when they start a new game.
 With the makefile included, player should type in their respective server
 1. **make game** for compilation
 2. **./game** for execution 
+
+### Sample input and output
+As batteship is a random-based game, no sample input and output can be provided.
