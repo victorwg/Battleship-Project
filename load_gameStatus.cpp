@@ -45,15 +45,15 @@ bool load_gameStatus(char ** ptr, string * pos, int & overall, int & size_of_arr
     for (int i = 0; i < 5; ++i) { //print the infomation to remind player
         if (hit[i]) {
             if (i == 0)
-              cout << "You have sunk enermy's Carrier!" << endl;
+              cout << "You have sunk enemy's Carrier!" << endl;
             else if (i == 1)
-              cout << "You have sunk enermy's Battleship!" << endl;
+              cout << "You have sunk enemy's Battleship!" << endl;
             else if (i == 2)
-              cout << "You have sunk enermy's Crusier!" << endl;
+              cout << "You have sunk enemy's Crusier!" << endl;
             else if (i == 3)
-              cout << "You have sunk enermy's Submarine!" << endl;
+              cout << "You have sunk enemy's Submarine!" << endl;
             else if (i == 4)
-              cout << "You have sunk enermy's Destroyer!" << endl;
+              cout << "You have sunk enemy's Destroyer!" << endl;
         }
     }
 
