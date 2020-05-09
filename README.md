@@ -50,7 +50,7 @@
 - play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
 - check_ship(), check if all ships are sunk. (No input required)
 - save_gameStatus(), file I/O for saving game status to "gamedata.txt" (Input required, "/save")
-- load_gameStatus(), filr I/O for loading game status from "gamedata.txt" (Input required, integer '2' in main function)
+- load_gameStatus(), file I/O for loading game status from "gamedata.txt" (Input required, integer '2' in main function)
 - inputXCoord, allow user to input x-coordinate for guessing. (No input required)
 - inputYCoord, allow user to input y-coordinate for guessing. (No input required)
 
