@@ -44,7 +44,7 @@
 - Player vs AI
 
 ### Functions plan to implement
-- main(), The main body of the function. (Input required, integer '1' for new gameplay, '2' for loading saved game, '3' for rules, '4' for ending gameplay)
+- main(), The main body of the function. (Input required, integer '1' for new gameplay, '2' for loading saved game, '3' for rules, '4' for terminating gameplay)
 - placeShip(), Randomize ships position and place it in the board. (No input required)
 - printBoard(), Print the board. (No input required)
 - play(), Player turn to call coordinate. (Output will be described in commit comment)
