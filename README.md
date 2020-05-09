@@ -46,7 +46,7 @@
 ### Functions plan to implement
 - main(), The main body of the function. (Input required, integer '1' for new gameplay, '2' for loading saved game, '3' for rules, '4' for ending gameplay)
 - placeShip(), Randomize ships position and place it in the board. (No input required)
-- printBoard(), print the board. (No input required)
+- printBoard(), Print the board. (No input required)
 - play(), player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10) )
 - check_ship(), check if all ships are sunk. (No input required)
 - save_gameStatus(), file I/O for saving game status to "gamedata.txt" (Input required, "/save")
