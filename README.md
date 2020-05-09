@@ -48,7 +48,7 @@
 - placeShip(), Randomize ships position and place it in the board. (No input required)
 - printBoard(), Print the board. (No input required)
 - play(), Player turn to call coordinate. (Input required, X-coordinate(A-J) and Y-coordinate(1-10)) (Output will be described in commit comment)
-- check_ship(), check if all ships are sunk. (No input required)
+- check_ship(), Check if all ships are sunk. (No input required) (Output will be described in commit comment)
 - save_gameStatus(), file I/O for saving game status to "gamedata.txt" (Input required, "/save")
 - load_gameStatus(), file I/O for loading game status from "gamedata.txt" (Input required, integer '2' in main function)
 - inputXCoord, allow user to input x-coordinate for guessing. (No input required)
